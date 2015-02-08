@@ -9,7 +9,7 @@ $(document).ready(function(){
     $('.notLoggedIn').fadeIn(0);
     $('.loggedIn').fadeOut(0);
   }
-  
+
   var cookie = document.cookie;
   cookie = cookie.substring(6,cookie.length);
   var party;
@@ -35,6 +35,22 @@ $(document).ready(function(){
       $('#party_address').text(party.get("Address"));
       $('#party_desc').text(party.get("Description"));
       price = party.get("DollarsPerPerson");
+
+      var User = Parse.User();
+      var query = new Parse.Query(User);
+      query.get(party.get("Host"), {
+      success: function(host) {
+        // The object was retrieved successfully.
+        $("#host_name").text(host.get("username"));
+        
+      },
+      error: function(object, error) {
+        // The object was not retrieved successfully.
+        // error is a Parse.Error with an error code and message.
+      }
+    });
+
+
     },
     error: function(error) {
       alert("Error: " + error.code + " " + error.message);
