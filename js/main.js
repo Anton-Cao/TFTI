@@ -23,9 +23,10 @@ $(document).ready(function(){
     $(partylist).slideDown();
   });
 
-  $('.6u 12u(narrower)').click(function(){
-    $(this)
-
+  $('.partypic').click(function(){
+    var name = $(this).next().find('h3').text();
+    document.cookie="event="+name;
+    window.location.href="party.html";
 
 
   });
