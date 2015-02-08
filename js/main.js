@@ -14,4 +14,12 @@ $(document).ready(function(){
     Parse.User.logOut();
     window.location.href='index.html';
   });
+
+  var partylist = $('#displayPartyList');
+  partylist.hide();
+
+  $('#findparty').click(function(){
+    $('#main').prepend(partylist);
+    $(partylist).slideDown();
+  });
 });
