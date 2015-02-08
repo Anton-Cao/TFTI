@@ -22,4 +22,12 @@ $(document).ready(function(){
     $('#main').prepend(partylist);
     $(partylist).slideDown();
   });
+
+  $('.6u 12u(narrower)').click(function(){
+    $(this)
+
+
+
+  });
+
 });
