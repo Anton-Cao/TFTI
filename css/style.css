@@ -490,9 +490,55 @@
 			}
 
 /* Button */
+	input[type="ANTON"],
+	.button {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-o-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+		-o-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+		background: none;
+		border: solid 1px;
+		color: inherit;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 0.8em;
+		font-weight: 900;
+		letter-spacing: 2px;
+		min-width: 18em;
+		padding: 0 0.75em;
+		line-height: 3.75em;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	input[type="ANTON"]:hover,
+	.button:hover {
+		background: rgba(188, 202, 206, 0.15);
+		border-color: inherit;
+	}
+
+	input[type="ANTON"].special,
+	.button.special {
+		background: #83d3c9;
+		border-color: #83d3c9;
+		color: white !important;
+	}
+
+	input[type="ANTON"].special:hover,
+	.button.special:hover {
+		background: #96dad1 !important;
+		border-color: #96dad1 !important;
+	}
+
 
 	input[type="button"],
-	input[type="submit"],
 	input[type="reset"],
 	.button {
 		-moz-appearance: none;
@@ -522,7 +568,6 @@
 	}
 
 		input[type="button"]:hover,
-		input[type="submit"]:hover,
 		input[type="reset"]:hover,
 		.button:hover {
 			background: rgba(188, 202, 206, 0.15);
@@ -530,7 +575,6 @@
 		}
 
 		input[type="button"].special,
-		input[type="submit"].special,
 		input[type="reset"].special,
 		.button.special {
 			background: #83d3c9;
@@ -539,7 +583,6 @@
 		}
 
 			input[type="button"].special:hover,
-			input[type="submit"].special:hover,
 			input[type="reset"].special:hover,
 			.button.special:hover {
 				background: #96dad1 !important;
