@@ -4,13 +4,13 @@ $(document).ready(function(){
   if(currentUser){
     $('.notLoggedIn').fadeOut(0);
     $('.loggedIn').fadeIn(0);
-    $('#username').text(currentUser.get("username"));
+    $('#usernameText').text(currentUser.get("username"));
   }else{
     $('.notLoggedIn').fadeIn(0);
     $('.loggedIn').fadeOut(0);
   }
 
-  $('#logOut').click(function(){
+  $('#logOutButton').click(function(){
     Parse.User.logOut();
     window.location.href='index.html';
   });
