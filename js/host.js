@@ -16,9 +16,10 @@ $(document).ready(function(){
     var party = new Party();
     party.set("Title",$("#partyName").val());
     party.set("Date",$("#date").val());
-    party.set("Dollars Per Person",$("#dollarsPerPerson").val());
-    party.set("Minimum People",$("#minPeople").val());
-    party.set("Maximum People",$("#maxPeople").val());
+    party.set("Address",$("#address").val());
+    party.set("DollarsPerPerson",parseInt($("#dollarsPerPerson").val()));
+    party.set("MinPeople",parseInt($("#minPeople").val()));
+    party.set("MaxPeople",parseInt($("#maxPeople").val()));
     party.set("Description",$("#description").val());
     party.set("Host",currentUser);
 
