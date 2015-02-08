@@ -40,8 +40,8 @@
 				<nav id="nav">
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="login.html">Log In</a></li>
-						<li><a href="signup.html">Sign Up</a></li>
+						<li class="loggedIn" id="usernameText">Username</li>
+						<li class="loggedIn" id="logOutButton"><a>Log Out</a></li>
 						<!--<li class="submenu">
 							<a href="">Layouts</a>
 							<ul>
@@ -85,32 +85,32 @@
 								<form>
 									<div class="row 50%">
 										<div class="12u">
-											<input type="text" name="name" placeholder="Party Name" />
+											<input type="text" name="name" placeholder="Party Name" id="partyName"/>
 										</div>
 									</div>
 									<div class="row 50%">
 										<div class="12u">
-											<input type="date" name="date" placeholder="Date" />
+											<input type="date" name="date" placeholder="Date" id="date"/>
 										</div>
 									</div>
 									<div class="row 50%">
 										<div class="12u">
-											<input type="number" name="minperperson" placeholder="Dollars per Person" />
+											<input type="number" name="minperperson" placeholder="Dollars per Person" id="dollarsPerPerson"/>
 										</div>
 									</div>
 									<div class="row 50%">
 										<div class="12u">
-											<input type="number" name="minpeople" placeholder="Minimum People"/>
+											<input type="number" name="minpeople" placeholder="Minimum People" id="minPeople"/>
 										</div>
 									</div>
 									<div class="row 50%">
 										<div class="12u">
-											<input type="number" name="maxpeople" placeholder="Maximum People"/>
+											<input type="number" name="maxpeople" placeholder="Maximum People" id="maxPeople"/>
 										</div>
 									</div>
 									<div class="row 50%">
 										<div class="12u">
-											<textarea name="message" placeholder="Description" rows="7"></textarea>
+											<textarea name="message" placeholder="Description" rows="7" id="description"></textarea>
 										</div>
 									</div>
 									<div class="row 50%	">
